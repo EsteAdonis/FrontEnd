@@ -1,0 +1,115 @@
+:root {
+ --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ --font-main-menu:18px;
+ --font-size-submenu: 14px;
+ --font-weight-300: 300; 
+ --font-weight-400: 400;
+ --font-weight-500: 500;
+ --red: #dc3545;
+ --visited: #003a4f;
+ --blue-mid: #0091c8;
+ --gray-500: #adb5bd;
+ --gray-400: #ced4da;
+}
+
+*{
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+}
+
+body {
+  font-size: 16px;
+  padding: 0 20px;
+}
+
+#menu, #menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#menu {
+  width: 100%;
+  margin: 50px auto;
+  font-size: var(--font-main-menu);
+  font-weight: var(--font-weight-300);
+}
+
+#menu:before, #menu:after{
+  content: '';
+  display: table;
+}
+
+#menu:after{
+  clear: both;
+}
+
+#menu > li {        /* The first level of <li> */
+  float: left;
+  position: relative;
+}
+
+#menu a {             /* Affects all <a> */
+  float: left;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: black;
+}
+
+#menu ul a:hover{
+  color: var(--visited)
+}
+
+#menu ul a {             /* Affects all <a> of submenu */
+  float: left;
+  padding: 10px 5px;
+  color: var(--visited);  
+}
+
+#menu li:hover > a {    /* Change background color of both the father and their children */
+  color: var(--red);
+}
+
+#menu ul {            /* Affecting all <ul>'s that are submenus */
+  margin: 20px 0 0 0;
+  opacity: 0;
+  visibility: hidden; 
+  position: absolute;
+  top: 40px;
+  left: 18px;
+  z-index: 1;
+  box-shadow: 0 30px 30px 0px rgb(0 0 0 / 30%);
+  transition: all .3s ease-in-out;
+  font-size: var(--font-size-submenu);
+  font-weight: var(--font-weight-400);
+}
+
+#menu li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  display:table;
+  margin: 0;
+}
+
+#menu ul a {
+  width: 190px;
+  border-bottom: 1px solid var(--gray-400);  
+}
+
+#menu ul a:hover {
+  color: var(--red);
+}
+
+#menu ul li:last-child  a {
+  border-bottom: none;
+}
+                /* Sub-submenu */
+
+#menu ul > li {  /* Refactor */
+  float: none;
+  padding: 0px 10px;
+  /* width: 260px; */
+}
+
+
