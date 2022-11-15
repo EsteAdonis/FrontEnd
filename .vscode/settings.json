@@ -1,8 +1,10 @@
 {
   "window.zoomLevel": 1.4,
   "editor.fontSize": 16,
-  "editor.fontFamily": "Consolas, 'Courier New', monospace",
+  "editor.fontFamily": " Consolas,  'Courier New', monospace",
   "editor.tabSize": 2,
   "liveServer.settings.port": 5501,
-  "editor.minimap.autohide": false
+  "editor.minimap.autohide": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeLensFontFamily": ""
 }
