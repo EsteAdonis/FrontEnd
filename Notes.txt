@@ -1,1 +1,2 @@
 This file belong before the stash example
+Adding new line in order to check this files is not going to get a conflict when gets execute stash pop
