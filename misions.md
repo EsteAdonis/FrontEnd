@@ -3,5 +3,5 @@
 3. Buscar nuevos miembros que sean super héroes.
 
 
-# Notas
+# Updated Notes
 This is a repo of Just League
