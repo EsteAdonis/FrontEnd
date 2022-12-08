@@ -1,2 +1,5 @@
 This file belong before the stash example
 Adding new line in order to check this files is not going to get a conflict when gets execute stash pop
+
+Velit ad et nostrud non. Sunt officia consectetur Lorem id elit esse. Elit cillum est adipisicing laborum eu exercitation in irure. 
+Et officia duis mollit culpa velit cupidatat. In cupidatat amet ut sit ex culpa pariatur mollit amet aliqua.
