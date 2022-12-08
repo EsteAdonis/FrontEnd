@@ -1,0 +1,1 @@
+This file belong before the stash example
