@@ -11,7 +11,7 @@ const form = document.querySelector('#form');
 const taskName = document.querySelector('#time #taskName');
 
 renderTime();
-renderTasks();
+renderTask();
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -60,7 +60,7 @@ function startButtonHandler(id) {
   current = id; 
   const taskIndex = tasks.findIndex(task => task.id === id);
   taskName.textContent = tasks[taskIndex].title;
-
+  renderTime();
   timer = setInterval(() => {
     timeHandler(id)
   }, 1000 )
@@ -81,7 +81,8 @@ function timeHandler(id) {
 
 function startBreak() {
   time = 3;
-  taskName.textContent = 'Break'
+  taskName.textContent = 'Break';
+  renderTime();
   timerBreak = setInterval(() => {
     timerBreakHandler();
   }, 1000);
